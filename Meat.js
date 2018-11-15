@@ -1,5 +1,6 @@
 
 var noteBox = [];
+var meatman =[];
 
 // blue print that will create the note
 class Note {
