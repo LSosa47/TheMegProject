@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="NoteStyles.css">
+	<title></title>
+</head>
+<body>
+<div id="hello" class="container">
+        <!--Input Section-->
+        <!-- I removed the col 5 and replaced it with class contentss CSS style to center the contents -->
+        <div  class="contents">
+          <h1 class="Logo"> Logo</h1>
+      <!--Create name of Note-->
+            <input id="nameTitle" type="text" placeholder="Enter Title">
+      <!--Select Importance of Note by color-->
+              <select id="colorCode" >
+              <option>-Status Code-</option>
+              <option value="red">Red</option>
+              <option value="yellow">Yellow</option>
+              <option value="green">Green</option>
+              </select>
+              <div>
+                <input type="button" value="Submit" onclick="makeNote()">
+                <input type="button" value="Sort" onclick="sortNotesByDate()">
+              </div>
+
+                  <br>
+          <div class="col" class="input-box">
+          <textarea id="textBox" name="advanced"
+            rows="10" cols="60" maxlength="200"
+            wrap="hard">
+          </textarea>
+          </div>
+        </div>
+  </div>
+
+<div class='container'>
+  <div class='row' id='totalNotes'>
+    <p>You have 0 notes in total</p>
+  </div>
+  <div class='row'>
+    <div class='col'>
+      <h1>Priority</h1>
+      <div id='priorityNote'>
+      
+      </div>
+    </div>
+    <div class='col'>
+      <h1>Moderate</h1>
+      <div id='importantNote'>
+        <button onclick="removeLI()">Remove</button>
+      </div>
+    </div>
+    <div class='col'>
+      <h1>It can wait</h1>
+      <div id='itCanWaitNote'>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src = "Meat.js"></script>
+<script type="text/javascript" src="script/jquery-1.8.1.min.js"></script>
+   <script type="text/javascript" src="script/my_script.js"></script>
+</body>
+</html>
