@@ -1,6 +1,12 @@
-
+console.log('we are connected')
 var noteBox = [];
-var meatman =[];
+
+// $(document).ready(function()) {
+//   $("#myButton").click(function () {
+//     $("#myTextBox").remove();
+//     $(this).remove();
+// });
+// }
 
 // blue print that will create the note
 class Note {
@@ -91,10 +97,8 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-$(document).ready( function() {
-  $("#remove_li").click( function() {
-    $("li:last").remove();
- });
-}
-
-);
+// $(document).ready( function() {
+//   $("#remove_li").click( function() {
+//     $("li:last").remove();
+//  });
+// });
