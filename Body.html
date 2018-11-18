@@ -23,13 +23,12 @@
       <!--Select Importance of Note by color-->
               <select id="colorCode" >
               <option>-Status Code-</option>
-              <option value="red">Red</option>
-              <option value="yellow">Yellow</option>
-              <option value="green">Green</option>
+              <option value="red">Priority</option>
+              <option value="yellow">Moderate</option>
+              <option value="green">It Can Wait</option>
               </select>
               <div>
                 <input type="button" value="Submit" onclick="makeNote()">
-                <input type="button" value="Sort" onclick="sortNotesByDate()">
               </div>
 
                   <br>
@@ -48,19 +47,19 @@
   </div>
   <div class='row'>
     <div class='col'>
-      <h1>Priority</h1>
+      <h1 id="pri">Priority</h1>
       <div id='priorityNote'>
       
       </div>
     </div>
     <div class='col'>
-      <h1>Moderate</h1>
+      <h1 id="mod">Moderate</h1>
       <div id='importantNote'>
         <button onclick="removeLI()">Remove</button>
       </div>
     </div>
     <div class='col'>
-      <h1>It can wait</h1>
+      <h1 id="icw">It can wait</h1>
       <div id='itCanWaitNote'>
         
       </div>
