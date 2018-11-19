@@ -64,6 +64,8 @@ function showNote() {
     var removeButton = document.createElement("button");
     removeButton.setAttribute('onclick', 'removeButton()')
     console.log(removeButton)
+    var remove = document.createElement("li");
+    var removeButton = document.createElement("button");
     var text = document.createTextNode("Remove");
     // add the text that I grabbed to the inner html of the LI's
     titleLi.appendChild(title);
