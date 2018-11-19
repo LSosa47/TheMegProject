@@ -58,12 +58,19 @@ function showNote() {
     // create the li
     var titleLi = document.createElement("li");
     var textAreaLi = document.createElement("li");
+    var remove = document.createElement("li");
+    var removeButton = document.createElement("button");
+    var text = document.createTextNode("Remove");
     // add the text that I grabbed to the inner html of the LI's
     titleLi.appendChild(title);
     textAreaLi.appendChild(textArea);
     // append the li's to the master UL
     ul.appendChild(titleLi);
     ul.appendChild(textAreaLi);
+    //put text in button
+    removeButton.appendChild(text);
+    remove.appendChild(removeButton)
+    ul.appendChild(remove);
     // Account for each color
     if (statusCode == "red") {
       document.getElementById("priorityNote").append(ul);
