@@ -15,10 +15,10 @@ h1, p {
 }
 
 .Logo {
+	width: 200px;
+	height: 160px;
 	text-indent: -9000px;
 	background:url(https://i.imgur.com/atjOh8l.png);
-	width: 200px;
-	height: 160px
 }
 
 .row{
@@ -28,6 +28,23 @@ h1, p {
 	justify-content: space-around;
 }
 
+.col{
+	width: 30%;
+}
+
 #icw, #mod, #pri {
+	text-align: center;
 	text-decoration: underline;
 }
+
+.contents {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	align-items: row;
+	justify-content: center; 
+}
+
