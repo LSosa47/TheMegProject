@@ -12,7 +12,13 @@ h1, p {
 
 #totalNotes, li {
 	color: white;
+  font-size: 30px;
 }
+
+.amountOfNotes{
+  font-size: 30px;
+}
+
 
 .Logo {
 	width: 200px;
@@ -45,7 +51,7 @@ h1, p {
 	display: flex;
 
 	align-items: row;
-	justify-content: center; 
+	justify-content: center;
 }
 
 #noteBackground {

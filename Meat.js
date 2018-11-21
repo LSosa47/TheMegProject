@@ -47,8 +47,8 @@ function showNote() {
   for (var i = 0; i < noteBox.length; i++) {
     // grab the properties deets and store them in a variable
     var statusCode = noteBox[i].statusCode;
-    var textArea = document.createTextNode(`Title: ${noteBox[i].textArea}`);
-    var title = document.createTextNode(`Note: ${noteBox[i].title}`);
+    var textArea = document.createTextNode(`Note: ${noteBox[i].textArea}`);
+    var title = document.createTextNode(`Title: ${noteBox[i].title}`);
     // display the total amount of notes
     document.getElementById("totalNotes").innerHTML = `You have ${
       noteBox.length
@@ -113,5 +113,7 @@ for (i = 0; i < coll.length; i++) {
 function removeButton() {
   var thingToRemove = document.querySelectorAll('.deleteMe')[0];
   thingToRemove.parentNode.removeChild(thingToRemove);
-  showNote()
+  noteBox.pop();
+  console.log('noteBox from the removeButton function', noteBox)
+  document.getElementById("totalNotes").innerHTML = `You have ${noteBox.length} notes in total`;
 }
